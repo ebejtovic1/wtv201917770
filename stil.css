@@ -1,0 +1,39 @@
+.parni {
+color: green;
+}
+
+p:hover{
+background-color: yellow;
+}
+
+p.podvuceno{ 
+text-decoration: underline; 
+}
+
+#ps{
+  font-style: italic;
+}
+
+.bojaT{
+background-color: gray;
+}
+
+#crni{
+  background-color: black;
+color: white;
+}
+
+#plavi{
+color: blue;
+}
+
+
+p:before{
+content: '';
+background:url('https://previews.123rf.com/images/djvstock/djvstock1701/djvstock170106428/69680668-lupe-lupe-symbol-vektor-illustration-grafik-design.jpg');
+background-size:cover;
+position:absolute;
+width: 18px;
+height: 18px;
+margin-left:-15px;
+}
