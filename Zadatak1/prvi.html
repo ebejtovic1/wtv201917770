@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function Funkcija(){
+var odgovor = prompt("Kako se zoves?", "Imenom i prezimenom(default)");
+if (odgovor!=null && odgovor!="")
+{
+     var r=confirm("Pritisnite OK da prikazete ime u alertboxu a Cancel za prikaz direktno na stranici");
+     if (r==true){
+	 var i;
+	var z="";
+	
+	for(i=odgovor.length-1; i>=0; i--){
+	
+		z += odgovor[i];
+	}
+
+	alert(z);
+}
+	else{  
+
+           document.write(odgovor);
+}
+}
+}
+</script>
+<button onclick="Funkcija()">Kliknite na dugme molim!</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+table {
+    font-family: sans-serif;
+}
+
+th {
+    font-weight: bold;
+    background-color: #CCCCCC;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+#zuto{
+    background-color: #FFF2CC;
+}
