@@ -1,0 +1,18 @@
+table, th, td{
+border: 1px solid black;
+border-collapse: collapse;
+padding: 5px;
+font-family:sans-serif;
+text-align:center;
+}
+
+#sivo{
+font-weight:bold;
+font-family:sans-serif;
+background-color:#CCCCCC;
+}
+
+#zuto{
+font-family:sans-serif;
+background-color:#FFF2CC;
+}
