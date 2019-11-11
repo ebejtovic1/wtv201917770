@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var n=document.getElementById('tekst').value;
+		n.replace(/<\/?[^>]+>/g, "");
+		document.getElementById("tekst").innerHTML = n;​
+	</script>
+</head>
+<body>
+<textarea id="tekst" rows="4" cols="50">
+<body>-tag za tijelo
+Napravite jednostavan HTML dokument sa TEXTAREA poljem u koje možete ukucati proizvoljan tekst. Zatim napišite JS funkciju koja iz unesenog HTML koda briše sve tagove i ostavlja samo tekst koristeći regex.<head> (HTML tag je niz teksta između znakova < i >). HTML entitete zamijenite njihovom vizuelnom reprezentacijom: &amp; sa &, &nbsp; sa razmakom, &quot; sa navodnicima.<div>
+
+</textarea>
+
+</body>
+</html>
