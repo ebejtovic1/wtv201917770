@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+    <body>
+        <script>
+            function funkcija(){
+                
+                var http=new XMLHttpRequest();
+                var url="http://localhost:8080";
+                var forma=document.getElementsByTagName("form")[0];
+                var bla=forma[0];
+                var parametri="ime="+forma[0].value+"&"+
+                "prezime="+forma[1].value+ "&"+
+                "adresa="+forma[2].value+"&"+"broj_telefona="+forma[3].value;
+              
+                http.open("POST",url,true);
+                http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                /*http.onreadystatechange=(e)=>{
+                    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                         var k=this.responseText.split("\n");
+                         var tabela=document.getElementsByTagName("table")[0];
+                         tabela.innerHTML="";
+                         for(let i=0;i<k.length;i++){
+                             let row=document.createElement("tr");
+                             let info2=k[i].split(",");
+                             for(let j=0;j<info2.length;j++){
+                                 var td=document.createElement("td");
+                                 td.innerHTML=info2[i];
+                                 row.appendChild(td);
+                             }
+                             tabela.appendChild(tr);
+                         }
+                    }
+                }*/
+                http.send(parametri);
+                
+    
+             
+                return false;
+            }   
+        </script>
+        <form onsubmit="return funkcija()">
+            <label>Ime</label> <input type=text id=ime> <br><br>
+            <label>Prezime</label> <input type=text id=prezime> <br><br>
+            <label>Broj telefona</label> <input type=text id=brojtelefona> <br><br>
+            <label>Adresa</label> <input type=text id=adresa> <br><br>
+            <button type=submit>Unesi! :)</button>
+            
+        </form>
+        <table>
+
+        </table>
+    </body>
+</html>
