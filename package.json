@@ -1,0 +1,19 @@
+{
+  "name": "wtv201917832",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nejiram@bitbucket.org/nejiram/wtv201917832.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nejiram/wtv201917832#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorijal 7, Zadatak 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="meni">
+            <a href="#" onclick="stranica1()" id="stranica1">Stranica 1</a>
+            <a href="#"onclick="stranica2()" id="stranica2">Stranica 2</a>
+            <a href="#" onclick="stranica3()" id="stranica3">Stranica 3</a>
+        </div>
+        <div id="sadrzaj"></div>
+        <script>
+            function stranica1(){
+                var ajax = new XMLHttpRequest();
+                ajax.onreadystatechange = function(){
+                    if (ajax.readyState == 4 && ajax.status == 200){
+                        document.getElementById("sadrzaj").innerHTML = ajax.responseText;
+                        document.getElementById("sadrzaj").style.visibility = "visible";
+                    }
+                    if (ajax.readyState == 4 && ajax.status == 404){
+                        document.getElementById("sadrzaj").innerHTML = "Greška: Nepoznat URL!";
+                        document.getElementById("sadrzaj").style.visibility = "visible";
+                    }
+                }
+                ajax.open("GET", "http://localhost:8085/stranica1.html", true);
+                ajax.send();
+            }
+            function stranica2(){
+                var ajax = new XMLHttpRequest();
+                ajax.onreadystatechange = function(){
+                    if (ajax.readyState == 4 && ajax.status == 200){
+                        document.getElementById("sadrzaj").innerHTML = ajax.responseText;
+                        document.getElementById("sadrzaj").style.visibility = "visible";
+                    }
+                    if (ajax.readyState == 4 && ajax.status == 404){
+                        document.getElementById("sadrzaj").innerHTML = "Greška: Nepoznat URL!";
+                        document.getElementById("sadrzaj").style.visibility = "visible";
+                    }
+                }
+                ajax.open("GET", "http://localhost:8085/stranica2.html");
+                ajax.send();
+            }
+            function stranica3(){
+                var ajax = new XMLHttpRequest();
+                ajax.onreadystatechange = function(){
+                    if (ajax.readyState == 4 && ajax.status == 200){
+                        document.getElementById("sadrzaj").innerHTML = ajax.responseText;
+                        document.getElementById("sadrzaj").style.visibility = "visible";
+                    }
+                    if (ajax.readyState == 4 && ajax.status == 404){
+                        document.getElementById("sadrzaj").innerHTML = "Greška: Nepoznat URL!";
+                        document.getElementById("sadrzaj").style.visibility = "visible";
+                    }
+                }
+                ajax.open("GET", "http://localhost:8085/stranica3.html");
+                ajax.send();
+            }
+        </script>
+    </body>
+</html>
