@@ -1,18 +1,18 @@
 {
-  "name": "wtv201917832",
+  "name": "wtv201917770",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "skripta.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://nejiram@bitbucket.org/nejiram/wtv201917832.git"
+    "url": "git+https://ebejtovic@bitbucket.org/ebejtovic/wtv201917770.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/nejiram/wtv201917832#readme",
+  "homepage": "https://bitbucket.org/ebejtovic/wtv201917770#readme",
   "dependencies": {
     "express": "^4.17.1"
   }

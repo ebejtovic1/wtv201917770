@@ -14,8 +14,8 @@ app.get("/index.html", function(req, res){
 app.get("/style.css", function(req, res){
     res.sendFile(__dirname + "/style.css");
 });
-app.get("/image.jpg", function(req, res){
-    res.sendFile(__dirname + "/image.jpg");
+app.get("/slika1.jpeg", function(req, res){
+    res.sendFile(__dirname + "/slika1.jpeg");
 });
 app.get("/stranica1.html", function(req, res){
     res.sendFile(__dirname + "/stranica1.html");
