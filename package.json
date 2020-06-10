@@ -1,0 +1,16 @@
+{
+  "name": "vjezba8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "primjer1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "pug": "^2.0.4"
+  }
+}
